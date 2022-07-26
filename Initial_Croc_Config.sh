@@ -3,7 +3,10 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install git -y
+sudo timedatectl set-timezone America/Denver
 
-chmod +x ~/unlocktheppo/dailyupdate.sh
-chmod +x ~/unlocktheppo/Initial_Config.sh
+wget https://github.com/UTPPO/UnlockThePPO/blob/main/dailyupdate.sh
+chmod +x ~/dailyupdate.sh
+sudo mv ~/dailyupdate.sh /usr/local/sbin/dailyupdate.sh
+
+echo "done!"
