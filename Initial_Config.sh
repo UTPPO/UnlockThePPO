@@ -14,6 +14,6 @@ chmod +x ~/Incoming_Executables.sh
 sudo mv ~/Incoming_Executables.sh /usr/local/sbin/Incoming_Executables.sh
 
 wget https://raw.githubusercontent.com/UTPPO/UnlockThePPO/main/crontab
-sudo mv ~/dailyupdate.sh /usr/local/sbin/crontab
+sudo mv ~/crontab /usr/local/sbin/crontab
 
 echo "done!"
