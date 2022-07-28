@@ -10,6 +10,8 @@ chmod +x ~/dailyupdate.sh
 sudo mv ~/dailyupdate.sh /usr/local/sbin/dailyupdate.sh
 
 wget https://raw.githubusercontent.com/UTPPO/UnlockThePPO/main/crontab
+sudo chown root ~/crontab
+sudo chgrp root ~/crontab
 sudo mv ~/crontab /etc/crontab
 
 echo "done!"
