@@ -14,4 +14,6 @@ sudo chown root ./crontab
 sudo chgrp root ./crontab
 sudo mv ./crontab /etc/crontab
 
+curl https://getcroc.schollz.com | bash
+
 echo "done!"
